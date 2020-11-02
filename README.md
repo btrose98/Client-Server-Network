@@ -9,13 +9,16 @@ Client-Server Network is a simple application that connects users over a network
 
 Testing Notes:
 
-  client.py should be started using the following command line arguments: $python2 client.py <name> <IP addresss> <port number> 
+  client.py should be started using the following command line arguments: $python2 client.py name ipAddress portNumber 
+                                                                           
                                                                            For example:   $python2 client.py Bradley 127.0.0.1 55555
   
   /create <channel name> : User is attempting to create a new channel.
+  
     Checks to see if there is an already existing channel with that name. If the channel already exists, then the user is informed that the channel cannot be created and is         asked to perform a new action. If the channel does not exist, the new channel is created and the user is then placed in that channel.
   
   /join <channel name>: User is attempting to join an already existing channel.
+  
      Checks to see if there is an existing channel with that name. If the channel exists, then the user is removed from their current channel and moved into the new specified        channel. Everyone in the original channel is notified that the user has left the channel, while everyone in the new channel is notified that the user has joined the            channel. If the channel does not exist, then the user is notified that the channel does not exist and prompts them to create the specified channel or select a new action.
   
   /list:  Displays all current available channels that the user can join.
