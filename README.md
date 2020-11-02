@@ -4,7 +4,7 @@ Chat server that allows users to create and join group chats to exchange message
 This was completed for the purposes of Assignment 1 for CEG 4188 - Higher Layer Network Protocols at the University of Ottawa.
 Assignment partner: Jason Smith, https://github.com/JasonSmith03
 
-The purpose of this assignment was to introduce us to socket programming API. The assignment was implemented using Python2.
+The purpose of this assignment was to introduce us to socket programming API. The assignment was implemented using Python2 and tested in a Linux terminal.
 Client-Server Network is a simple application that connects users over a network: a chat server. The chat server allows users to converse in different channels. Users can create and join channels; once a user is in a particular channel, all messages that he/she sends will be relayed to all other users in that channel. If a user joins or leaves a channel, all users in that existing channel are notified of the action. A user is only allowed to be in one channel at a time.
 
 Testing Notes:
